@@ -15,7 +15,9 @@ const listaSpesa = [
 ]
 // console.log(listaSpesa);
 
-const ul = document.createElement('ul');
+// ! CICLO FOR
+
+/* const ul = document.createElement('ul');
 const container = document.querySelector('.container');
 console.log(ul);
 console.log(container);
@@ -41,6 +43,27 @@ for(let i = 0; i < listaSpesa.length; i++){
   
   container.innertext = ul;
 };
+
+*/
+
+
+// ! CICLO WHILE
+
+const ul = document.createElement('ul');
+const container = document.querySelector('.container');
+let c = 0;
+
+
+while (listaSpesa[c]) {
+  let li = document.createElement('li');
+  let alimento = listaSpesa[c];
+  li.innerText = alimento;
+  ul.append(li);
+  container.append(ul);
+  container.innertext = ul;
+  c++;
+  console.log(listaSpesa[c]);
+}
 
 
 
