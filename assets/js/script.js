@@ -18,16 +18,16 @@ const listaSpesa = [
 const ul = document.createElement('ul');
 const container = document.querySelector('.container');
 console.log(ul);
+console.log(container);
 
 
 for(let i = 0; i < listaSpesa.length; i++){
-  
-  // creo variabile che racchiude i singoli prodotti
-  let alimento = listaSpesa[i];
-
   // crea variabile LI
   let li = document.createElement('li');
   console.log(li);
+  
+  // creo variabile che racchiude i singoli prodotti
+  let alimento = listaSpesa[i];
 
   // stampa i singoli prodotti in una variabile LI
   li.innerText = alimento;
@@ -37,9 +37,13 @@ for(let i = 0; i < listaSpesa.length; i++){
   ul.append(li);
   
   //appendi UL a container
-  ul.append(container);
+  container.append(ul);
   
+  container.innertext = ul;
 };
+
+
+
 
 
 
