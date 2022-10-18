@@ -39,10 +39,7 @@ for(let i = 0; i < listaSpesa.length; i++){
   //appendi UL a container
   ul.append(container);
   
-
-
 };
-
 
 
 
