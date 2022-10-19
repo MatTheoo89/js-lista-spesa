@@ -54,7 +54,7 @@ const container = document.querySelector('.container');
 let c = 0;
 
 
-while (listaSpesa[c]) {
+while (c < listaSpesa.length) {
   let li = document.createElement('li');
   let alimento = listaSpesa[c];
   li.innerText = alimento;
